@@ -14,4 +14,18 @@ from stringlib import *
 #these methods will operate on the Worker class data member. 
 #Your method can call the needed function in the stringlib
 #module.
+class Worker:
+    def __init__(self, str):
+        self.str = str
 
+    def wreverseStr(self):
+        return reverseStr(self.str)
+
+    def wcontainsWord(self, containedStr):
+        return containsWord(self.str, containedStr)
+
+    def wisPalindrome(self):
+        return isPalindrome(self.str)
+
+    def wupperCaseStr(self):
+        return upperCaseStr(self.str)
